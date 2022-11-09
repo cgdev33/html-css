@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    /*temos as medidas absolutas: cm, mm, in, px, pt. temos as medidas relativas: em(altura do M maiúsculo), ex, rem(relativo a fonte que está configurada no body), porcentágem. As mais utilizadas são 'em e px'*/
+    font-size: 16px;/*tamanho normal da fonte em pixels é 16px, e 16px é igual a 1em*/
+    font-weight: ;/*peso da fonte, são: lighter, normal, bold e bolder. Pode ir também de 100 a 900. Serve para colocar o texto em negrito*/
+    font-style: ;/*Serve para por o texto em itálico*/
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+}/*Dá pra fazer tudo em uma única linha, ex: font: italic bolder 3em 'Arial, Helvetica, sans-serif' */
+
+h2 {
+    font: bold 2em 'Arial, Helvetica, sans-serif';
+}

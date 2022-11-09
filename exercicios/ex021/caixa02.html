@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 5px;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.685);/*criando sombras,pode criar diretamente no 'inspecionar' depois copia e cola aqui*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 10px;/*separar os links*/
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 2px ;/*arredondar as bordas*/
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.664);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {/*tira a margin automática do parágrafo que é de 16px*/
+            margin: 0px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px auto ;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+
+<!--colocar uma tag dentro da outra!-->
+</head>
+<!--como ciar um conteúdo mais semântico-->
+<body>
+    <header><!--cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav><!--menu de navegação-->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main><!--corpo/conteúdo-->
+        <section id="assuntos"><!--seção-->
+
+        </section>
+        <section id="noticias">
+            <article><!--artigo-->
+                <h2>Notícia sobre o caba</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde quisquam fuga id facere quidem enim numquam. Quis, tempore beatae maxime perferendis cum, saepe ad provident fugit pariatur architecto magnam.</p>
+                <aside><!--conteúdo periférico-->
+                    <p>artigo escrito por Gibimba</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer><!--rodapé-->
+        <p>Desenvolvido por CGDev</p>
+        <div id="bola"></div>
+    </footer>
+</body>
+</html>

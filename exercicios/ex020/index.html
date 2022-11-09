@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /*por padrão o h1 é um box-level, é criado em um grande bloco(display:block)*/
+        h1 {
+            height: 200px;
+            width: 300px;
+            background-color: rgb(118, 118, 153);
+            
+            border-color: black;
+            border-style: solid;
+            border-width: 10px;
+
+            border: 10px solid black; /*esta linha subistitui as 3 linhas de cima(simplifica)*/
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            padding: 10px 10px 10px 10px;/*simplificação*/
+
+            margin-top: 20px ;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            margin: 20px auto 40px auto;/*usa-se o 'auto' para centralizar a caixa*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blue;
+
+            outline: 5px blue dashed;
+        }
+
+        /*por padrão a ancora é inline-level, é criado em uma linha (display:inline)*/
+        a {
+            border-width: 4px;
+            border-color: red;
+            border-style: solid;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--aninhamento é colocar uma caiixa dentro de outra caixa, uso em camadas-->
+    <!--o PADDING é o espaço entre a borda e a linha de texto-->
+    <!--o MARGIN é  margem ddo lado de fora da borda-->
+    <!--o OUTLINE é o contorno-->
+    <!---->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tmbém são exemplos de box-level mas <a href="">os lnks são exeplos de caxas inline-level</a>. Vamos ver como tudo so funciona</p>
+
+</body>
+</html>

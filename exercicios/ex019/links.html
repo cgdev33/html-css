@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        /*# = id
+          . = class
+          : = pseudo-class
+          ::= pseudo-element
+          > = children*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*retirar o sublinhado*/
+            font-weight: bold; /*negrito*/
+        }
+        
+        /*pseudoclasse em 'a' muda a cor quando é visitado*/
+        a:visited {
+            color: red;
+        }
+        
+        /*pseudoclasse, quando passa o mouse por cima*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*quando clca no link ele moda de cor*/
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: burlywood;
+         
+        }
+
+        .especial::before {
+            content:'↠' ;
+        }
+
+        .especial::after {
+            content:'↞' ;
+            
+        }
+
+        /*quando é pseudo-classe usa-se ':' apenas uma vez, quando for pseudo-elemento usa-se duas vezes '::'*/
+
+        /*Depois de todos os liinks*/
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personaizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositóriio Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Yotube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
