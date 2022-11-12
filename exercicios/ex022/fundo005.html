@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionamento</title>
     <style>
+        /*o Shorthand pode ser usado na seguinte ordem: color > image > position > repeat > size > attachment. ex: background: black rul('imagens/xxxxxxxxxxxxx') center center no-repeat cover fixed;*/
+        
         body {
+            
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: auto;/*100% da imagem na tela*/
+            background-size: cover;/*100% da imagem na tela*/
+            background-attachment: fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;/*o tamanho do texto vai se adaptando ao tamanho da tela, vai espremendo*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 10px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
@@ -30,7 +42,7 @@
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium, possimus at quo natus reiciendis nobis ad incidunt assumenda, ea pariatur. Veniam reprehenderit tempore minima dolores eius illo corrupti architecto?
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum asperiores quam ratione accusamus! Ipsum, ab a. Repellat distinctio placeat dolores perspiciatis, accusantium, vero provident quisquam expedita incidunt nesciunt aspernatur deserunt!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, labore iure. Deserunt, reiciendis? Explicabo nihil error, nam sunt quaerat dicta omnis voluptatem repudiandae accusantium animi tempore, voluptates nulla officia! Delectus?</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, labore iure. Deserunt, reiciendis? Explicabo nihil error, nam sunt quaerat dicta omnis voluptatem repudiandae accusantium animi tempore, voluptates nulla officia! Delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem odio repellendus ea laborum adipisci corrupti in quasi magni qui! Fugiat odit excepturi est neque, nisi doloremque. Ad, corporis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere, voluptate quae excepturi, illo at iusto quibusdam suscipit nihil illum, velit nisi sint officia asperiores omnis iure? Rem, illo doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quo quisquam veritatis officiis esse magni alias, architecto <p>culpa odio neque, reiciendis maiores repellendus exercitationem vel. Ea nobis ad nesciunt et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga excepturi minus quasi corrupti doloremque minima neque repudiandae tenetur, obcaecati placeat in est esse fugiat</p> <p>temporibus omnis perferendis perspiciatis illum veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur velit sapiente nesciunt ad? Sed saepe ex possimus ratione explicabo ullam porro nemo? Tempora voluptates earum perferendis soluta possimus accusamus consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta tempora impedit enim, totam magnam quo sequi corporis, accusamus sapiente quam eligendi quae iure sunt at omnis odio repellendus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae, temporibus eligendi tempore aperiam aliquam vero, nisi maxime neque dignissimos voluptates ut consequatur deserunt itaque saepe eveniet laudantium nesciunt quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi atque fugiat, cum velit delectus officiis, laudantium distinctio odio exercitationem, vero minus quia accusamus architecto optio tempore odit aliquid libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium sint ullam in molestiae alias placeat consequatur ipsam sunt, aspernatur inventore libero nesciunt ad sapiente quasi debitis. Cum, quos dicta.</p>
     </main>
 </body>
 </html>
