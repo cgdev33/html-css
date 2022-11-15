@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');/*font-family: 'Passion One', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');/*font-family: 'Sriracha', cursive;*/
+
+:root {/*criação de variáveis*/
+    --fonte0: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100%;/*ou 100vh, o tamanho mínimo vai ser de 100% da view port height, VW é a largura*/
+    font-family:  var(--fonte0);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    text-transform: uppercase;/*tudo em letra maiúscula*/
+    /*font-variant: small-caps, o texto fica todo maiúsculo porém as primeiras letras ficam maiores*/
+    font-family: var(--fonte1);
+    font-size: 10vw;/*a letra de adaapta ao tamanho da tela, view port width(largura da tela)*/
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;/*10% da altura da tela*/
+    padding-bottom: 10vh;
+    line-height: 2em;/*espaço entre as frases*/
+    padding-left: 30px;/*afastar o texto do lado esquerd*/
+    font-family: var(--fonte2);
+    font-size: 3vw;/*a letra de adaapta ao tamanho da tela, view port width(largura da tela)*/
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+section.normal {
+    background-color: white;
+    color: black;   
+}
+
+section.imagem {
+    background-color: rgb(36, 31, 31);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.753);
+    background-attachment: fixed;/*efeito paralax, manter as iimagens fixas*/
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
