@@ -15,7 +15,11 @@
     
     <h1>Meu primeiro formulário</h1>
     
-    <form action="cadastro.php" autocomplete="off"><!--(action="cadastro.php") envia as informações p um banco de dados--><!--(autocomplete: off)desliga a lembrança da caixa-->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--(action="cadastro.php") envia as informações p um banco de dados-->
+        <!--existem dois métodos de armazenagem para o html, o padrão é o 'get' em que os dados ficam na barra do navegador, usa-se quando os dados não são sencíveis e possui um tamanho máximo de 3k bits, o outro é o 'post' em que os dados não vão para a barra do navegador, porém aparecem no "inspecionar", usa-se quando os dados são sencíveis (cartões/senhas), maiores que 3mil bites ou enviar arquivos -->
+        <!--para de fato criptografar os dados será necessário o HTTPS-->
+        <!--(autocomplete: off)desliga a lembrança da caixa-->
         <!--o label serve para vincular os nomes as caixas dando preferencia sempre os "id"-->
         <p>
             <label for="inome">Nome:</label> 
