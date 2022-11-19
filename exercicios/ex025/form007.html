@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--aqui não usaremos mais a tag 'input', usaremos apenas a tag 'select'-->
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest"><!--cria uma caixa com seta pra escolha-->
+
+                <option value="" selected>*** Escolha ***</option><!--selected irá selecionar oque aparecerá na caixa, o value fica vazio-->
+
+                <optgroup label="Região sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--lista onde pode-se escrever dentro da caixa-->
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="istprof">
+
+            <datalist id="istprof">
+                <option>Advogado</option>
+                <option>Médico</option>
+                <option>Engenheiro</option>
+                <option>Professor</option>
+
+            </datalist>
+        </p>
+        <p>
+            <!--caixa de mensagem, é aconselhável utilizar o 'method="post"'-->
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
