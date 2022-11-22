@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head><!--cabeçalho-->
-<body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()"><!--mudar o tamanho do site-->
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i><!--'id' para configurar o ícoe do menu--><!--'onclick' é JS-->
@@ -36,9 +36,9 @@
 
         function mudouTamanho() {
             /*'if é uma condicional*/
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 768) {/* 'window.innerWidth' largura da tela*/
                 itens.style.display = 'block'
-            } else {
+            } else {/*se não!*/
                 itens.style.display = 'none'
             }
         }
